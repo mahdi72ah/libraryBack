@@ -11,7 +11,7 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Razor.Design/2.1.2": {
+      "Microsoft.AspNetCore.Razor.Design/2.2.0": {
         "type": "package",
         "build": {
           "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props": {}
@@ -1602,6 +1602,38 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "library.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Razor.Design": "2.2.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "Swashbuckle.AspNetCore": "5.6.3",
+          "library.DataLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/library.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/library.Core.dll": {}
+        }
+      },
+      "library.DataLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Razor.Design": "2.1.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
+        },
+        "compile": {
+          "bin/placeholder/library.DataLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/library.DataLayer.dll": {}
+        }
       }
     }
   },
@@ -1622,10 +1654,10 @@
         "logo.png"
       ]
     },
-    "Microsoft.AspNetCore.Razor.Design/2.1.2": {
-      "sha512": "fe1+dpy+eM4IX1zodsvkihO1Spuj0NecfStWzvkYoMo7/ziOsqSv4vFK36ZpBfHa4gpdCEwaU46EPzdq+ZDYhQ==",
+    "Microsoft.AspNetCore.Razor.Design/2.2.0": {
+      "sha512": "VLWK+ZtMMNukY6XjxYHc7mz33vkquoEzQJHm/LCF5REVxIaexLr+UTImljRRJBdUDJluDAQwU+59IX0rFDfURA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.razor.design/2.1.2",
+      "path": "microsoft.aspnetcore.razor.design/2.2.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1633,10 +1665,8 @@
         "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.CodeGeneration.targets",
         "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props",
         "buildMultiTargeting/Microsoft.AspNetCore.Razor.Design.props",
-        "microsoft.aspnetcore.razor.design.2.1.2.nupkg.sha512",
+        "microsoft.aspnetcore.razor.design.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.razor.design.nuspec",
-        "tasks/net46/Microsoft.AspNetCore.Razor.Tasks.dll",
-        "tasks/netstandard2.0/Microsoft.AspNetCore.Razor.Tasks.dll",
         "tools/Microsoft.AspNetCore.Razor.Language.dll",
         "tools/Microsoft.CodeAnalysis.CSharp.dll",
         "tools/Microsoft.CodeAnalysis.Razor.dll",
@@ -6004,15 +6034,26 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "library.Core/1.0.0": {
+      "type": "project",
+      "path": "../library.Core/library.Core.csproj",
+      "msbuildProject": "../library.Core/library.Core.csproj"
+    },
+    "library.DataLayer/1.0.0": {
+      "type": "project",
+      "path": "../library.DataLayer/library.DataLayer.csproj",
+      "msbuildProject": "../library.DataLayer/library.DataLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
+      "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 5.0.17",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.17",
-      "Swashbuckle.AspNetCore >= 5.6.3"
+      "Swashbuckle.AspNetCore >= 5.6.3",
+      "library.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6041,7 +6082,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\libraryBack\\libraryBack\\library.Core\\library.Core.csproj": {
+              "projectPath": "E:\\libraryBack\\libraryBack\\library.Core\\library.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -6056,7 +6101,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Razor.Design": {
             "target": "Package",
-            "version": "[2.1.2, )"
+            "version": "[2.2.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

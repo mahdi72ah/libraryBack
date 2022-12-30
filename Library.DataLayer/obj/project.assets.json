@@ -11,7 +11,7 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Razor.Design/2.1.1": {
+      "Microsoft.AspNetCore.Razor.Design/2.1.0": {
         "type": "package",
         "build": {
           "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props": {}
@@ -1548,10 +1548,10 @@
         "logo.png"
       ]
     },
-    "Microsoft.AspNetCore.Razor.Design/2.1.1": {
-      "sha512": "1XHObHLx6A0/57ZmLG9gfKMO/Z/gQjRXPFWQDMlPZGYwcfgufvSdmI2+RYvR5DGkbba9HIHC35ClNQ2yVNIohw==",
+    "Microsoft.AspNetCore.Razor.Design/2.1.0": {
+      "sha512": "NGpC8STZnIO4V0kBgf4hZIK0Pjc0pNuvy28irNr4Z+jCo0o4WfRDAo9zcfKhk9Sm9OriOAlRYoKr1+gBBNC0NA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.razor.design/2.1.1",
+      "path": "microsoft.aspnetcore.razor.design/2.1.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1559,7 +1559,7 @@
         "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.CodeGeneration.targets",
         "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props",
         "buildMultiTargeting/Microsoft.AspNetCore.Razor.Design.props",
-        "microsoft.aspnetcore.razor.design.2.1.1.nupkg.sha512",
+        "microsoft.aspnetcore.razor.design.2.1.0.nupkg.sha512",
         "microsoft.aspnetcore.razor.design.nuspec",
         "tasks/net46/Microsoft.AspNetCore.Razor.Tasks.dll",
         "tasks/netstandard2.0/Microsoft.AspNetCore.Razor.Tasks.dll",
@@ -5827,7 +5827,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Microsoft.AspNetCore.Razor.Design >= 2.1.1",
+      "Microsoft.AspNetCore.Razor.Design >= 2.1.0",
       "Microsoft.EntityFrameworkCore >= 5.0.17",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.17"
@@ -5874,7 +5874,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Razor.Design": {
             "target": "Package",
-            "version": "[2.1.1, )"
+            "version": "[2.1.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

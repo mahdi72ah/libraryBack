@@ -1,0 +1,15 @@
+E:\libraryBack\libraryBack\library.Core\bin\Debug\net5.0\library.Core.deps.json
+E:\libraryBack\libraryBack\library.Core\bin\Debug\net5.0\library.Core.dll
+E:\libraryBack\libraryBack\library.Core\bin\Debug\net5.0\ref\library.Core.dll
+E:\libraryBack\libraryBack\library.Core\bin\Debug\net5.0\library.Core.pdb
+E:\libraryBack\libraryBack\library.Core\bin\Debug\net5.0\library.DataLayer.dll
+E:\libraryBack\libraryBack\library.Core\bin\Debug\net5.0\library.DataLayer.pdb
+E:\libraryBack\libraryBack\library.Core\obj\Debug\net5.0\library.Core.csprojAssemblyReference.cache
+E:\libraryBack\libraryBack\library.Core\obj\Debug\net5.0\library.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\libraryBack\libraryBack\library.Core\obj\Debug\net5.0\library.Core.AssemblyInfoInputs.cache
+E:\libraryBack\libraryBack\library.Core\obj\Debug\net5.0\library.Core.AssemblyInfo.cs
+E:\libraryBack\libraryBack\library.Core\obj\Debug\net5.0\library.Core.csproj.CoreCompileInputs.cache
+E:\libraryBack\libraryBack\library.Core\obj\Debug\net5.0\library.Core.csproj.CopyComplete
+E:\libraryBack\libraryBack\library.Core\obj\Debug\net5.0\library.Core.dll
+E:\libraryBack\libraryBack\library.Core\obj\Debug\net5.0\ref\library.Core.dll
+E:\libraryBack\libraryBack\library.Core\obj\Debug\net5.0\library.Core.pdb

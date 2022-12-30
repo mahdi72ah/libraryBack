@@ -17,7 +17,7 @@ namespace library.Core.Utilities.Extensions.connection
         {
             service.AddDbContext<dbContext>(options =>
             {
-                var connectionString = "ConnectionStrings:vdLibraryConnection:Development";
+                var connectionString = "ConnectionStrings:Connection:Development";
                 options.UseSqlServer(configuration[connectionString]);
             });
 

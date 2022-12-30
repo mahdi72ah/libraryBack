@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using library.Core.Utilities.Extensions.connection;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
@@ -12,6 +13,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using library.Core.Services.Implementations;
+using library.Core.Services.Interfaces;
+using library.DataLayer.Repository;
 
 namespace libraryBack
 {
@@ -34,6 +38,21 @@ namespace libraryBack
                     .Build()
             );
 
+            #region Add DbContext
+
+            services.AddApplicationDbContext(Configuration); // ست کردن کانکشن استرینگ
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));//در این قسمت امدم و سرویس ریپوزیتوری رو به برنامم معرفی کردم
+
+            #endregion
+
+            #region Application Services
+            //در زیر امدم و سرویسم که برای مدل یوزر ایجاد کردم به برنامم معرفی کردم
+            //در زیر گفتم هر جا که اینترفیس یوزر رو صدا زدن که میشه همون ای یوزر سرویسز شما بیا بهش کلاس یوزر سرویسز رو پاس بده
+
+            services.AddScoped<ImenuServices, menuServices>();
+
+            #endregion
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -50,6 +69,10 @@ namespace libraryBack
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "libraryBack v1"));
             }
+
+            app.UseStaticFiles(); // => این باید بزارم تا تصاویر استاتیک رو از
+            //wwwroot
+            // برام لود کنه و بیاره و گرنه لود نمیکنه اون تصویری که داخل این پوشه هست منظورم و میدل ور اون کار نمیکنه
 
             app.UseHttpsRedirection();
 

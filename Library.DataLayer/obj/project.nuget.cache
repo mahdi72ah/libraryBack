@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "HfGaKLQrcFT+Yu7jT7t4zQhJNvOv51G+cpdRAd8D9Bp98CRCUfs5XMlI8GNOw15TToShOyYCYwjS5Em4rM1oCg==",
+  "dgSpecHash": "fumFSxLKR0ziK6CYzGRIGVfF03bjR1srPWdvxskZGC8sLhi4IoIquTdGbbSkeeVf57FRNxv7GC8lUmeUuW3V3g==",
   "success": true,
   "projectFilePath": "E:\\libraryBack\\libraryBack\\library.DataLayer\\library.DataLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vahid\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\vahid\\.nuget\\packages\\microsoft.aspnetcore.razor.design\\2.1.1\\microsoft.aspnetcore.razor.design.2.1.1.nupkg.sha512",
+    "C:\\Users\\vahid\\.nuget\\packages\\microsoft.aspnetcore.razor.design\\2.1.0\\microsoft.aspnetcore.razor.design.2.1.0.nupkg.sha512",
     "C:\\Users\\vahid\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\vahid\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\vahid\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

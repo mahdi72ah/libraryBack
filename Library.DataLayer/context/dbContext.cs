@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using library.DataLayer.Entities.menu;
 using Microsoft.EntityFrameworkCore;
 
 namespace library.DataLayer.context
@@ -19,9 +20,7 @@ namespace library.DataLayer.context
 
         #region DB Sets
 
-        //public DbSet<User> Users { get; set; }
-        //public DbSet<Role> Roles { get; set; }
-        //public DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<menu> menu { get; set; }
 
         #endregion
 
