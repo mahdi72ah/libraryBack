@@ -33,7 +33,7 @@ namespace library.Core.Services.Implementations
 
 
           menuTotal = await _genericRepositoryMenu.GetEntitiesQuery()
-                .Where(c => c.menu_id == null  && !c.IsDelete)
+                .Where(c => c.idx=="1" && !c.IsDelete)
                 . Select( c => new menuDTOS()
                 {
                   menu_id = c.menu_id,
