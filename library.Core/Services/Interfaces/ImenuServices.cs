@@ -9,7 +9,7 @@ namespace library.Core.Services.Interfaces
 {
     public interface ImenuServices:IDisposable
     {
-        Task<List<menuDTOS>> getAllMenuItem();
+        Task<List<menuDTOS>> getAllMenuItem(long menuId = 0);
         Task<List<menuDTOS>> getMenuItemByMenu_id(long menu_id=0);
     }
 }

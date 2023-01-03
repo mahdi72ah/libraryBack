@@ -25,9 +25,9 @@ namespace libraryBack.Controllers.menu
 
         #region getAllMenuItem
         [HttpGet("getAllMenuItem")]
-        public async Task<List<menuDTOS>> getAllMenuItem()
+        public async  Task<List<menuDTOS>> getAllMenuItem()
         {
-            return await _MenuServices.getAllMenuItem();
+            return await  _MenuServices.getAllMenuItem(0);
         }
 
         #endregion
