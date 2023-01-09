@@ -20,6 +20,8 @@ namespace library.DataLayer.Entities.menu
 
         public string idx { get; set; }
         public long?  menu_id { get; set; }
+        public string?  link { get; set; }
+        public string?  icon { get; set; }
 
         #endregion
 

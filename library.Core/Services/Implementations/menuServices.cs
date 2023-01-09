@@ -27,30 +27,6 @@ namespace library.Core.Services.Implementations
 
         #region getAllMenuItem
 
-        //public async Task<List<menuDTOS>> getAllMenuItem()
-        //{
-        //    List<menuDTOS> menuTotal = new List<menuDTOS>();
-
-
-        //  menuTotal = await _genericRepositoryMenu.GetEntitiesQuery()
-        //        .Where(c => c.idx=="1" && !c.IsDelete)
-        //        . Select( c => new menuDTOS()
-        //        {
-        //          menu_id = c.menu_id,
-        //          title = c.title,
-        //          child = _genericRepositoryMenu.GetEntitiesQuery()
-        //              .Where(p => p.menu_id == c.Id)
-        //              .Select(p => new menuDTOS()
-        //              {
-        //                  id = p.Id,
-        //                  title = p.title,
-        //                  menu_id = p.menu_id
-        //              }).ToList()
-        //        }).ToListAsync();
-
-        //     return menuTotal;
-        //}
-
 
         public async Task<List<menuDTOS>> getAllMenuItem(long menuId=0)
         {
@@ -96,21 +72,6 @@ namespace library.Core.Services.Implementations
 
             return menuTotalEnd;
         }
-
-
-        public async Task<List<menuDTOS>> getMenuItemByMenu_id(long menu_id=0)
-        {
-                var child= await  _genericRepositoryMenu.GetEntitiesQuery()
-                .Where(p => p.menu_id == menu_id)
-                .Select(p=>new menuDTOS()
-                {
-                    id = p.Id,
-                    title = p.title,
-                    menu_id = p.menu_id
-                }) .ToListAsync();
-                return child;
-        }
-
 
 
         #endregion
