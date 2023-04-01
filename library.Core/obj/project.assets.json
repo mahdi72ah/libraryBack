@@ -5940,7 +5940,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vahid\\.nuget\\packages\\": {}
+    "C:\\Users\\LoGa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -5948,11 +5948,11 @@
       "projectUniqueName": "E:\\libraryBack\\libraryBack\\library.Core\\library.Core.csproj",
       "projectName": "library.Core",
       "projectPath": "E:\\libraryBack\\libraryBack\\library.Core\\library.Core.csproj",
-      "packagesPath": "C:\\Users\\vahid\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\LoGa\\.nuget\\packages\\",
       "outputPath": "E:\\libraryBack\\libraryBack\\library.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vahid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LoGa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

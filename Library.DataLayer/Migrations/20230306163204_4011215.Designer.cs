@@ -10,8 +10,8 @@ using library.DataLayer.context;
 namespace library.DataLayer.Migrations
 {
     [DbContext(typeof(dbContext))]
-    [Migration("20230109160431_14011019")]
-    partial class _14011019
+    [Migration("20230306163204_4011215")]
+    partial class _4011215
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

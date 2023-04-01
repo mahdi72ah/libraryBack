@@ -9,6 +9,7 @@ using library.DataLayer.Entities.menu;
 using library.DataLayer.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ValueGeneration;
 
 namespace library.Core.Services.Implementations
 {
@@ -41,7 +42,9 @@ namespace library.Core.Services.Implementations
                     {
                         id = c.Id,
                         menu_id = c.menu_id,
-                        title = c.title
+                        title = c.title,
+                        icon = c.icon,
+                        link = c.link
                     }).ToListAsync();
 
             }
@@ -53,7 +56,8 @@ namespace library.Core.Services.Implementations
                     {
                         id = c.Id,
                         menu_id = c.menu_id,
-                        title = c.title
+                        title = c.title,
+                        link = c.link
                     }).ToListAsync();
             }
 

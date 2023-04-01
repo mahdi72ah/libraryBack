@@ -12,6 +12,8 @@ namespace library.Core.DTOs.menu
         #region properties
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         public string title { get; set; }
+        public string icon { get; set; }
+        public string link { get; set; }
 
         public long?  menu_id { get; set; }
         public long id { get; set; }

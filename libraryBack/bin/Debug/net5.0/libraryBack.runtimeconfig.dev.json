@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\vahid\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\vahid\\.nuget\\packages"
+      "C:\\Users\\LoGa\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\LoGa\\.nuget\\packages"
     ]
   }
 }

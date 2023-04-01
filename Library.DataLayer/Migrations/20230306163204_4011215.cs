@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace library.DataLayer.Migrations
 {
-    public partial class _14011007 : Migration
+    public partial class _4011215 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,6 +16,8 @@ namespace library.DataLayer.Migrations
                     title = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     idx = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     menu_id = table.Column<long>(type: "bigint", nullable: true),
+                    link = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    icon = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsDelete = table.Column<bool>(type: "bit", nullable: false),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LastUpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false)

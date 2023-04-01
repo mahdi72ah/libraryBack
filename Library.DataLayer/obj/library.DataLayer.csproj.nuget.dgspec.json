@@ -10,11 +10,11 @@
         "projectUniqueName": "E:\\libraryBack\\libraryBack\\library.DataLayer\\library.DataLayer.csproj",
         "projectName": "library.DataLayer",
         "projectPath": "E:\\libraryBack\\libraryBack\\library.DataLayer\\library.DataLayer.csproj",
-        "packagesPath": "C:\\Users\\vahid\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\LoGa\\.nuget\\packages\\",
         "outputPath": "E:\\libraryBack\\libraryBack\\library.DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vahid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LoGa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

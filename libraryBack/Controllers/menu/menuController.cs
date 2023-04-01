@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +26,8 @@ namespace libraryBack.Controllers.menu
         [HttpGet("getAllMenuItem")]
         public async  Task<List<menuDTOS>> getAllMenuItem()
         {
-            return await  _MenuServices.getAllMenuItem(0);
+            var data= await _MenuServices.getAllMenuItem(0);
+            return data;
         }
 
         #endregion
